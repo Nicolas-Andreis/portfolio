@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: white;
+    .container-perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .azul{
+            color: $azul;
+        }
+    }
+}
+

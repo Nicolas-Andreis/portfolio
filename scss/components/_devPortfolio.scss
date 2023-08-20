@@ -1,0 +1,20 @@
+.dev-portfolio {
+    margin: 1rem 1rem;
+
+    div {
+        border-radius: 1rem;
+        height: 8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: map-get($sombra, normal);
+
+        img {
+            width: 6rem;
+            object-fit: cover;
+            height: 6rem;
+            border-radius: 0.5rem;
+        }
+    }
+}

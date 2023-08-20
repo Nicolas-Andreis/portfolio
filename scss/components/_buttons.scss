@@ -1,0 +1,15 @@
+.containter-buttons {
+    margin: 1rem 0;
+
+    .btn-perfil {
+        border-radius: 0.5rem;
+        background: none;
+        color: $azul;
+        box-shadow: map-get($sombra, normal);
+        width: 6rem;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

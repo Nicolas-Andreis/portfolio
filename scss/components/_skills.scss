@@ -1,0 +1,25 @@
+.skills {
+    margin: 1rem 1rem;
+
+    div {
+        box-shadow: map-get($sombra, normal);
+        border-radius: 1rem;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        scrollbar-width: none; /* Ocultar la barra de desplazamiento en navegadores que lo admitan */
+        -ms-overflow-style: none; /* Ocultar la barra de desplazamiento en Internet Explorer */
+        display: flex;
+
+        /* Asegurarse de que las imágenes tengan suficiente espacio */
+        min-width: calc(4rem * (cantidad-de-imagenes) + 2rem);
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            object-fit: cover;
+            /* Eliminar margen horizontal para más espacio */
+            margin: 0.3rem 0.5rem;
+        }
+    }
+}

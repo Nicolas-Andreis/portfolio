@@ -1,0 +1,20 @@
+//UTILITIES
+@import "../scss/utilities/maps";
+@import "../scss/utilities/variables";
+
+// RESET
+@import "../scss/base/reset";
+@import "../scss/base/typo";
+
+// PAGES
+@import "../scss/layout/index";
+
+// COMPONENTS
+@import "../scss/components/about";
+@import "../scss/components/devPortfolio";
+@import "../scss/components/fotoPerfil";
+@import "../scss/components/nav";
+@import "../scss/components/redes";
+@import "../scss/components/skills";
+@import "../scss/components/buttons";
+// media queries

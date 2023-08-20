@@ -1,0 +1,12 @@
+.perfil {
+    box-shadow: map-get($sombra, normal);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+
+    img {
+        width: 10rem;
+        object-fit: cover;
+    }
+}

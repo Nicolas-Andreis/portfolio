@@ -1,0 +1,9 @@
+.about {
+    margin: 1rem 1rem;
+    div {
+        box-shadow: map-get($sombra, normal);
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+}
