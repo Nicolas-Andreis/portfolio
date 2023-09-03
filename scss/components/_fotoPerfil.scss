@@ -1,3 +1,10 @@
+.container-perfil{
+    div{
+        h3:nth-child(3) {
+            color: darkgrey;
+        }
+    }
+}
 .perfil {
     box-shadow: map-get($sombra, normal);
     width: 40%;
