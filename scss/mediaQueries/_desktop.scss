@@ -16,7 +16,7 @@
         grid-template-columns: (auto auto auto);
         /* Dos columnas iguales */
         grid-template-rows: auto;
-        grid-gap: 20px;
+        grid-gap: 0px;
         /* Espacio entre las celdas */
         max-width: 1200px;
         margin: 0 auto;
@@ -29,6 +29,9 @@
     }
 
     body {
+        .luz{
+            width: 100%;
+        }
         .container-perfil {
             grid-area: perfil;
             /* Asigna el área "perfil" */
@@ -44,7 +47,7 @@
                 width: 30vw;
 
                 h3 {
-                    font-size: 2rem;
+                    font-size: 3rem;
                     text-align: initial;
                 }
 

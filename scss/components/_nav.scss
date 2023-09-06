@@ -2,4 +2,10 @@ nav{
     span{
         color: $azul;
     }
+    .nav-link{
+        margin: 0 1.5rem;
+        &:hover{
+            border-bottom: 3px solid aqua;
+        }
+    }
 }

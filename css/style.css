@@ -40,17 +40,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.dark {
   background-color: black;
   color: white;
 }
-body .container-perfil {
+.dark .container-perfil {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-body .container-perfil .azul {
+.dark .container-perfil .azul {
   color: #01a1c7;
+}
+
+.light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .about {
@@ -99,6 +104,12 @@ body .container-perfil .azul {
 
 nav span {
   color: #01a1c7;
+}
+nav .nav-link {
+  margin: 0 1.5rem;
+}
+nav .nav-link:hover {
+  border-bottom: 3px solid aqua;
 }
 
 .redes {
@@ -152,6 +163,55 @@ nav span {
   margin-bottom: 0;
 }
 
+.luz {
+  justify-content: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin-right: 2rem;
+}
+.luz img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+.luz p {
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+}
+.luz .celeste {
+  align-items: center;
+  background-color: aqua;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 3rem;
+  height: 1.5rem;
+}
+.luz .celeste .on {
+  display: none;
+  background-color: black;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+}
+.luz .celeste .on.active {
+  display: block;
+  margin-right: 50%;
+}
+.luz .celeste .off {
+  background-color: black;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  display: none;
+}
+.luz .celeste .off.active {
+  display: block;
+  margin-left: 50%;
+}
+
 @media (min-width: 992px) {
   body {
     font-family: Arial, sans-serif;
@@ -168,7 +228,7 @@ nav span {
     grid-template-columns: auto auto auto;
     /* Dos columnas iguales */
     grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 0px;
     /* Espacio entre las celdas */
     max-width: 1200px;
     margin: 0 auto;
@@ -179,6 +239,9 @@ nav span {
     /* Estilo para los botones */
     /* Estilo para los botones al pasar el ratón */
     /* Estilo para las imágenes en la sección de habilidades */
+  }
+  body .luz {
+    width: 100%;
   }
   body .container-perfil {
     grid-area: perfil;
