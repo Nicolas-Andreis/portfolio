@@ -7,10 +7,6 @@ celesteElement.addEventListener('click', function () {
     const onElement = celesteElement.querySelector('.on');
     const offElement = celesteElement.querySelector('.off');
 
-    // Alterna las clases "active on" y "active off" en "onElement"
-    onElement.classList.toggle('active');
-    offElement.classList.toggle('active');
-
     // Cambia la clase del cuerpo en función del estado del interruptor
     if (onElement.classList.contains('active')) {
         document.body.classList.remove('dark');
@@ -19,4 +15,8 @@ celesteElement.addEventListener('click', function () {
         document.body.classList.remove('light');
         document.body.classList.add('dark');
     }
+
+    // Alterna las clases "active" en el interruptor
+    onElement.classList.toggle('active');
+    offElement.classList.toggle('active');
 });

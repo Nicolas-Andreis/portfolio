@@ -57,6 +57,16 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+.light header nav .luz img {
+  background-color: black;
+  border-radius: 1.5rem;
+}
+.light header nav .nav-link {
+  color: black !important;
+}
+.light header nav .navbar-toggler {
+  background-color: black;
+}
 
 .container-perfil {
   display: flex;
