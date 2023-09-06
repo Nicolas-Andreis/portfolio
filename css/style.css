@@ -58,6 +58,15 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.container-perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container-perfil .azul {
+  color: #01a1c7;
+}
+
 .about {
   margin: 1rem 1rem;
 }
