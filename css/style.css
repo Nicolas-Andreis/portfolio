@@ -40,6 +40,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
 .dark {
   background-color: black;
   color: white;
@@ -67,6 +71,11 @@ body {
 .light header nav .navbar-toggler {
   background-color: black;
 }
+.light main .container-perfil .perfil img {
+  width: 100%;
+  background-color: #43a1c7;
+  border-radius: 1rem;
+}
 
 .container-perfil {
   display: flex;
@@ -79,6 +88,7 @@ body {
 
 .about {
   margin: 1rem 1rem;
+  height: 20vh;
 }
 .about div {
   box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
@@ -111,14 +121,18 @@ body {
 
 .perfil {
   box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
-  width: 40%;
+  width: 40vw;
   display: flex;
   justify-content: center;
   border-radius: 1rem;
+  position: relative;
+  top: 0.3rem;
+  height: 27vh;
 }
 .perfil img {
   width: 10rem;
   object-fit: cover;
+  align-self: end;
 }
 
 nav span {
@@ -169,6 +183,11 @@ nav .nav-link:hover {
 
 .containter-buttons {
   margin-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
 }
 .containter-buttons .btn-perfil {
   border-radius: 0.5rem;
@@ -180,6 +199,7 @@ nav .nav-link:hover {
 }
 .containter-buttons .btn-perfil p {
   margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 .luz {
@@ -188,7 +208,7 @@ nav .nav-link:hover {
   flex-direction: row;
   align-items: center;
   width: 50%;
-  margin-right: 2rem;
+  margin: auto;
 }
 .luz img {
   width: 2rem;
@@ -267,7 +287,7 @@ nav .nav-link:hover {
     /* Asigna el área "perfil" */
     text-align: center;
     width: 60vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -275,33 +295,50 @@ nav .nav-link:hover {
   body .container-perfil div:nth-child(1) {
     height: 30vh;
     width: 30vw;
+    position: relative;
+    top: -1.2rem;
   }
   body .container-perfil div:nth-child(1) h3 {
-    font-size: 3rem;
+    font-size: 2.1rem;
     text-align: initial;
   }
   body .container-perfil div:nth-child(1) h3:nth-child(3) {
     color: darkgrey;
     font-weight: bold;
-    margin-top: 2rem;
   }
   body .container-perfil div:nth-child(1) .containter-buttons {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
   }
   body .container-perfil div:nth-child(1) .containter-buttons button {
-    width: 10rem;
+    width: 12.5vw;
+    height: 2rem;
+    position: relative;
+    top: -1.5rem;
+  }
+  body .container-perfil .perfil {
+    width: 20vw;
+    position: relative;
+    right: -0.5rem;
+    height: 40vh;
+    top: -1rem;
   }
   body .container-perfil .perfil img {
     width: 100%;
+    object-fit: contain;
   }
   body .about {
     grid-area: about;
     /* Asigna el área "about" */
     text-align: center;
     width: 20vw;
+    height: 10vh;
+    position: relative;
+    top: -3.7rem;
   }
   body .about p {
-    height: 17rem;
+    height: 20vh;
     padding: 1rem;
   }
   body .redes {
@@ -313,6 +350,8 @@ nav .nav-link:hover {
     align-items: center;
     width: 20vw;
     margin: 0 auto;
+    position: relative;
+    top: -0.5rem;
   }
   body .redes img {
     width: 3rem !important;
@@ -322,6 +361,8 @@ nav .nav-link:hover {
     grid-area: dev-portfolio;
     /* Asigna el área "dev-portfolio" */
     text-align: center;
+    position: relative;
+    top: -1rem;
   }
   body .dev-portfolio div {
     height: 10rem;
@@ -338,6 +379,8 @@ nav .nav-link:hover {
     text-align: center;
     width: 20vw;
     overflow-x: none;
+    position: relative;
+    top: -1rem;
   }
   body .skills div {
     overflow-x: inherit;

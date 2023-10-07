@@ -3,6 +3,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+
     }
 
     h3 {
@@ -29,15 +30,16 @@
     }
 
     body {
-        .luz{
+        .luz {
             width: 100%;
         }
+
         .container-perfil {
             grid-area: perfil;
             /* Asigna el área "perfil" */
             text-align: center;
             width: 60vw;
-            height: 50vh;
+            height: 40vh;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -45,30 +47,43 @@
             div:nth-child(1) {
                 height: 30vh;
                 width: 30vw;
+                position: relative;
+                top: -1.2rem;
 
                 h3 {
-                    font-size: 3rem;
+                    font-size: 2.1rem;
                     text-align: initial;
                 }
 
                 h3:nth-child(3) {
                     color: darkgrey;
                     font-weight: bold;
-                    margin-top: 2rem;
                 }
 
                 .containter-buttons {
                     margin-top: 2rem;
+                    display: flex;
+                    flex-direction: row;
 
                     button {
-                        width: 10rem;
+                        width: 12.5vw;
+                        height: 2rem;
+                        position: relative;
+                        top: -1.5rem;
                     }
                 }
             }
 
             .perfil {
+                width: 20vw;
+                position: relative;
+                right: -0.5rem;
+                height: 40vh;
+                top: -1rem;
+
                 img {
                     width: 100%;
+                    object-fit: contain;
                 }
             }
         }
@@ -78,9 +93,12 @@
             /* Asigna el área "about" */
             text-align: center;
             width: 20vw;
+            height: 10vh;
+            position: relative;
+            top: -3.7rem;
 
             p {
-                height: 17rem;
+                height: 20vh;
                 padding: 1rem;
             }
         }
@@ -94,6 +112,8 @@
             align-items: center;
             width: 20vw;
             margin: 0 auto;
+            position: relative;
+            top: -.5rem;
 
             img {
                 width: 3rem !important;
@@ -105,6 +125,8 @@
             grid-area: dev-portfolio;
             /* Asigna el área "dev-portfolio" */
             text-align: center;
+            position: relative;
+            top: -1rem;
 
             div {
                 height: 10rem;
@@ -124,6 +146,8 @@
             text-align: center;
             width: 20vw;
             overflow-x: none;
+            position: relative;
+            top: -1rem;
 
             div {
                 overflow-x: inherit;

@@ -1,5 +1,10 @@
 .containter-buttons {
     margin-top: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
     .btn-perfil {
         border-radius: 0.5rem;
         background: none;
@@ -10,6 +15,7 @@
 
         p {
             margin-bottom: 0;
+            font-size: 0.9rem;
         }
     }
 }
