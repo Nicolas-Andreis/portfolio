@@ -98,6 +98,8 @@ h3 {
 
 .dev-portfolio {
   margin: 1rem 1rem;
+  position: relative;
+  top: -2rem;
 }
 .dev-portfolio div {
   border-radius: 1rem;
@@ -160,6 +162,8 @@ nav .nav-link:hover {
 
 .skills {
   margin: 1rem 1rem;
+  position: relative;
+  top: -1rem;
 }
 .skills div {
   box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
@@ -194,7 +198,7 @@ nav .nav-link:hover {
   background: none;
   color: #01a1c7;
   box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
-  width: 6rem;
+  width: 8rem;
   border: none;
 }
 .containter-buttons .btn-perfil p {
@@ -354,8 +358,9 @@ nav .nav-link:hover {
     top: -0.5rem;
   }
   body .redes img {
-    width: 3rem !important;
-    height: 3rem !important;
+    width: 2.3rem !important;
+    height: 2.3rem !important;
+    cursor: pointer;
   }
   body .dev-portfolio {
     grid-area: dev-portfolio;

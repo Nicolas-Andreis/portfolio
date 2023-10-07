@@ -1,5 +1,8 @@
 .skills {
     margin: 1rem 1rem;
+    position: relative;
+    top: -1rem;
+
 
     div {
         box-shadow: map-get($sombra, normal);
