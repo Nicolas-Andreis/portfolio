@@ -1,10 +1,37 @@
-.container-perfil{
-    div{
+.container-perfil {
+    div {
+        h3:nth-child(2) {
+            display: block;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 19ch;
+            animation: typing 3.5s steps(19) infinite,
+                /* Repetición infinita de typing */
+                blink .5s infinite step-end alternate;
+            /* Repetición infinita de blink */
+            overflow: hidden;
+
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent
+                }
+
+                ;
+            }
+        }
+
         h3:nth-child(3) {
             color: darkgrey;
         }
     }
 }
+
 .perfil {
     box-shadow: map-get($sombra, normal);
     width: 40vw;
