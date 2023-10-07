@@ -1,6 +1,7 @@
-h3{
+h3 {
     font-size: 1.2rem;
 }
+
 .dark {
     background-color: black;
     color: white;
@@ -43,9 +44,9 @@ h3{
         .container-perfil {
             .perfil {
                 img {
-                    width: 100%;
-                    background-color: #43a1c7;
-                    border-radius: 1rem;
+                    width: 10rem;
+                    object-fit: cover;
+                    align-self: end;
                 }
             }
         }

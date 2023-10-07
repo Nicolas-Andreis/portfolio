@@ -72,9 +72,9 @@ h3 {
   background-color: black;
 }
 .light main .container-perfil .perfil img {
-  width: 100%;
-  background-color: #43a1c7;
-  border-radius: 1rem;
+  width: 10rem;
+  object-fit: cover;
+  align-self: end;
 }
 
 .container-perfil {
