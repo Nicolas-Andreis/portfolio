@@ -1,0 +1,53 @@
+.container-form{
+    width: 80%;
+    height: auto;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: #232223;
+    form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        label{
+            margin-top: .5rem;
+        }
+        input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            margin-bottom: 1rem;
+            &:focus-visible {
+                outline: 2px solid #007bff00; /* Cambia el color y el grosor del borde de enfoque */
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Agrega una sombra al enfoque */
+                border-bottom: 3px solid white;
+            }
+        }
+        
+        textarea{
+            background-color: black;
+            border: none;
+            border-radius: .5rem;
+            color: white;
+            padding: 0.5rem;
+            &:focus-visible {
+                outline: 2px solid #007bff00; /* Cambia el color y el grosor del borde de enfoque */
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Agrega una sombra al enfoque */
+                
+            }
+        }
+        button{
+            width: 30%;
+            margin: 1rem auto;
+            border-radius: 0.5rem;
+            border: none;
+            box-shadow: map-get($sombra, normal);
+            &:hover{
+                background-color: black;
+                color: white;
+                box-shadow: none;
+            }
+        }
+    }
+}
