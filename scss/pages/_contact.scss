@@ -1,53 +1,99 @@
-.container-form{
+.container-form {
     width: 80%;
     height: auto;
     border-radius: 1rem;
     margin: auto;
     background-color: #232223;
-    form{
+
+    form {
         width: 90%;
         display: flex;
         flex-direction: column;
         margin: auto;
-        label{
+
+        label {
             margin-top: .5rem;
         }
-        input{
+
+        input {
             background-color: transparent;
             border: none;
             border-bottom: 1px solid white;
             color: white;
             margin-bottom: 1rem;
+
             &:focus-visible {
-                outline: 2px solid #007bff00; /* Cambia el color y el grosor del borde de enfoque */
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Agrega una sombra al enfoque */
+                outline: 2px solid #007bff00;
+                /* Cambia el color y el grosor del borde de enfoque */
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+                /* Agrega una sombra al enfoque */
                 border-bottom: 3px solid white;
             }
         }
-        
-        textarea{
+
+        textarea {
             background-color: black;
             border: none;
             border-radius: .5rem;
             color: white;
             padding: 0.5rem;
+
             &:focus-visible {
-                outline: 2px solid #007bff00; /* Cambia el color y el grosor del borde de enfoque */
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Agrega una sombra al enfoque */
-                
+                outline: 2px solid #007bff00;
+                /* Cambia el color y el grosor del borde de enfoque */
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+                /* Agrega una sombra al enfoque */
+
             }
         }
-        button{
+
+        button {
             width: 30%;
             margin: 1rem auto;
             border-radius: 0.5rem;
             border: none;
             box-shadow: map-get($sombra, normal);
-            &:hover{
+
+            &:hover {
                 background-color: black;
                 color: white;
                 box-shadow: none;
             }
         }
     }
+}
+
+.flex-redes-about {
+    display: flex;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+
+    &.rotated {
+        transition: 0s;
+        transform: rotate(0deg);
+        /* Rotamos -90 grados para alinear verticalmente */
+        transform-origin: right bottom;
+        /* Especificamos el punto de rotación */
+        margin-right: 0vw;
+        /* Espacio entre elementos */
+        bottom: 5vh;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .circle {
+        background-color: #232223;
+        border-radius: 3rem;
+        margin: .5rem;
+
+        img {
+            transform: rotate(0deg);
+            width: 2rem;
+            margin: 1rem;
+        }
+    }
+
 }

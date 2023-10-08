@@ -320,4 +320,38 @@
     .container-form {
         width: 35%;
     }
+    .flex-redes-about {
+        display: flex;
+        width: auto;
+        position: absolute;
+        right: 0;
+        
+    
+        &.rotated {
+            transition: 2s;
+            transform: rotate(90deg);
+            /* Rotamos -90 grados para alinear verticalmente */
+            transform-origin: right bottom;
+            /* Especificamos el punto de rotación */
+            margin-right: 10vw;
+            /* Espacio entre elementos */
+            bottom: 5vh;
+            overflow: hidden;
+            width: auto;
+        }
+    
+        .circle {
+            background-color: #232223;
+            border-radius: 3rem;
+            margin: .5rem;
+    
+            img {
+                transform: rotate(270deg);
+                width: 3rem;
+                margin: 1rem;
+            }
+        }
+    
+    }
+    
 }

@@ -158,8 +158,10 @@ h3 {
   margin-bottom: 1rem;
 }
 .container-form form input:focus-visible {
-  outline: 2px solid rgba(0, 123, 255, 0); /* Cambia el color y el grosor del borde de enfoque */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Agrega una sombra al enfoque */
+  outline: 2px solid rgba(0, 123, 255, 0);
+  /* Cambia el color y el grosor del borde de enfoque */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  /* Agrega una sombra al enfoque */
   border-bottom: 3px solid white;
 }
 .container-form form textarea {
@@ -170,8 +172,10 @@ h3 {
   padding: 0.5rem;
 }
 .container-form form textarea:focus-visible {
-  outline: 2px solid rgba(0, 123, 255, 0); /* Cambia el color y el grosor del borde de enfoque */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Agrega una sombra al enfoque */
+  outline: 2px solid rgba(0, 123, 255, 0);
+  /* Cambia el color y el grosor del borde de enfoque */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  /* Agrega una sombra al enfoque */
 }
 .container-form form button {
   width: 30%;
@@ -184,6 +188,37 @@ h3 {
   background-color: black;
   color: white;
   box-shadow: none;
+}
+
+.flex-redes-about {
+  display: flex;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+}
+.flex-redes-about.rotated {
+  transition: 0s;
+  transform: rotate(0deg);
+  /* Rotamos -90 grados para alinear verticalmente */
+  transform-origin: right bottom;
+  /* Especificamos el punto de rotación */
+  margin-right: 0vw;
+  /* Espacio entre elementos */
+  bottom: 5vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flex-redes-about .circle {
+  background-color: #232223;
+  border-radius: 3rem;
+  margin: 0.5rem;
+}
+.flex-redes-about .circle img {
+  transform: rotate(0deg);
+  width: 2rem;
+  margin: 1rem;
 }
 
 .card {
@@ -686,6 +721,34 @@ nav .nav-link.active {
   /* contact page ////////////////////////////////////*/
   .container-form {
     width: 35%;
+  }
+  .flex-redes-about {
+    display: flex;
+    width: auto;
+    position: absolute;
+    right: 0;
+  }
+  .flex-redes-about.rotated {
+    transition: 2s;
+    transform: rotate(90deg);
+    /* Rotamos -90 grados para alinear verticalmente */
+    transform-origin: right bottom;
+    /* Especificamos el punto de rotación */
+    margin-right: 10vw;
+    /* Espacio entre elementos */
+    bottom: 5vh;
+    overflow: hidden;
+    width: auto;
+  }
+  .flex-redes-about .circle {
+    background-color: #232223;
+    border-radius: 3rem;
+    margin: 0.5rem;
+  }
+  .flex-redes-about .circle img {
+    transform: rotate(270deg);
+    width: 3rem;
+    margin: 1rem;
   }
 }
 

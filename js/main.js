@@ -1,6 +1,11 @@
-//efecto del cursor
+//efecto pagina contact para que giren los circulos
+document.addEventListener('DOMContentLoaded', function() {
+    const flexRedesAbout = document.querySelector('.flex-redes-about');
 
-//efecto del cursor
+    // Agrega una clase que activa la rotación y la transición
+    flexRedesAbout.classList.add('rotated');
+});
+//efecto pagina contact para que giren los circulos
 
 
 
