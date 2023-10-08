@@ -11,13 +11,15 @@
 
         .parrafo {
             margin-top: 2rem;
+            text-align: center;
         }
     }
 
     .container-img-about {
-        img {
+        .img-about {
             width: 20rem;
             transition: 0.5s;
+            display: none;
             cursor: pointer;
             &:hover{
                 

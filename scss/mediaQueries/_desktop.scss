@@ -43,7 +43,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            div{
+
+            div {
                 h3:nth-child(2) {
                     display: block;
                     white-space: nowrap;
@@ -54,18 +55,18 @@
                         blink .5s infinite step-end alternate;
                     /* Repetición infinita de blink */
                     overflow: hidden;
-        
+
                     @keyframes typing {
                         from {
                             width: 0;
                         }
                     }
-        
+
                     @keyframes blink {
                         50% {
                             border-color: transparent
                         }
-        
+
                         ;
                     }
                 }
@@ -107,6 +108,7 @@
                 right: -0.5rem;
                 height: 40vh;
                 top: -1rem;
+                display: flex;
 
                 img {
                     width: 100%;
@@ -228,66 +230,94 @@
     }
 
 
-
-/*projects page /////////////////////////////*/
-.card{
-    background-color: #232223;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    color: white;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    .flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .container-tecnologias{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    /*about page /////////////////////////////*/
+.flex{
+    .container-img-about {
+        .img-about {
+            display: block !important;
         }
-        div{
-            a{
-                text-decoration: none;
-                color: white;
-                p{
-                    border: 1px solid white;
-                    border-radius: .5rem;
-                    width: 7rem;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
+
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*projects page /////////////////////////////*/
+    .card {
+        background-color: #232223;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .container-tecnologias {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div {
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    p {
+                        border: 1px solid white;
+                        border-radius: .5rem;
+                        width: 7rem;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                    }
                 }
             }
         }
-    }
-    .flex-card{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
-        p{
-            text-align: center;
-            padding: 1rem;
-        }
 
-        img{
-            width: 30rem;
-            height: 10rem;
-            border-radius: 1rem;
-            object-fit: contain;
+        .flex-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+
+            p {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            img {
+                width: 30rem;
+                height: 10rem;
+                border-radius: 1rem;
+                object-fit: contain;
+            }
         }
     }
-}
 
 
     /* contact page ////////////////////////////////////*/
-    .container-form{
+    .container-form {
         width: 35%;
     }
 }
