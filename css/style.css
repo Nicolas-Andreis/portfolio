@@ -83,6 +83,11 @@ h3 {
   color: #01a1c7;
 }
 
+.container-form form label {
+  margin-top: 0.5rem;
+  color: white;
+}
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -115,9 +120,13 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow-x: auto;
+  margin: auto 0.5rem;
 }
 .container-skills div img {
   width: 4rem;
+  height: 4rem;
+  margin: 1rem;
   cursor: pointer;
   transition: transform 0.9s;
 }
@@ -220,6 +229,9 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+}
+.card .flex-card p {
+  text-align: center;
 }
 .card .flex-card img {
   width: 20rem;
