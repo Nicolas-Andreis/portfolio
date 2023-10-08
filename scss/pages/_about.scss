@@ -1,0 +1,50 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+        .about-h3 {
+            margin-bottom: 3rem;
+        }
+
+        .parrafo {
+            margin-top: 2rem;
+        }
+    }
+
+    .container-img-about {
+        img {
+            width: 20rem;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                
+                border-radius: 1rem;
+                box-shadow: map-get($sombra, normal);
+            }
+        }
+    }
+}
+
+.container-skills {
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        img {
+            width: 4rem;
+            cursor: pointer;
+            transition: transform 0.9s;
+
+            &:hover {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}

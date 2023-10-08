@@ -1,3 +1,12 @@
+//efecto del cursor
+
+//efecto del cursor
+
+
+
+
+
+
 // Obtén una referencia al elemento con clase "celeste"
 const celesteElement = document.querySelector('.celeste');
 

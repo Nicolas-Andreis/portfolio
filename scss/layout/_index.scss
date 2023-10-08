@@ -44,9 +44,8 @@ h3 {
         .container-perfil {
             .perfil {
                 img {
-                    width: 10rem;
-                    object-fit: cover;
-                    align-self: end;
+                    width: 100%;
+                    object-fit: contain;
                 }
             }
         }
