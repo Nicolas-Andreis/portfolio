@@ -305,6 +305,9 @@ nav .nav-link {
 nav .nav-link:hover {
   border-bottom: 3px solid aqua;
 }
+nav .nav-link.active {
+  border-bottom: 3px solid aqua;
+}
 
 .redes {
   display: flex;
@@ -539,7 +542,7 @@ nav .nav-link:hover {
     width: 20vw;
     margin: 0 auto;
     position: relative;
-    top: -1.5rem;
+    top: 0rem;
   }
   body .redes img {
     width: 2.3rem !important;
