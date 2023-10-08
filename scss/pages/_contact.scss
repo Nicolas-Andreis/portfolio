@@ -3,8 +3,8 @@
     height: auto;
     border-radius: 1rem;
     margin: auto;
-    background-color: #232223;
-
+    box-shadow: map-get($sombra, normal);
+    
     form {
         width: 90%;
         display: flex;
@@ -18,7 +18,7 @@
         input {
             background-color: transparent;
             border: none;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid $azul;
             color: white;
             margin-bottom: 1rem;
 
@@ -27,13 +27,13 @@
                 /* Cambia el color y el grosor del borde de enfoque */
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0);
                 /* Agrega una sombra al enfoque */
-                border-bottom: 3px solid white;
+                border-bottom: 3px solid $azul;
             }
         }
 
         textarea {
-            background-color: black;
-            border: none;
+            background-color: rgba(18, 18, 18, 0.347);
+            border: 1px solid $azul;
             border-radius: .5rem;
             color: white;
             padding: 0.5rem;
@@ -85,9 +85,9 @@
     }
 
     .circle {
-        background-color: #232223;
         border-radius: 3rem;
         margin: .5rem;
+        box-shadow: map-get($sombra, normal);
 
         img {
             transform: rotate(0deg);
