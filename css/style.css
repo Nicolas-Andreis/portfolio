@@ -206,6 +206,8 @@ h3 {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: static;
+  margin-top: 5%;
 }
 .flex-redes-about .circle {
   border-radius: 3rem;
@@ -274,8 +276,7 @@ h3 {
 }
 
 .about {
-  margin: 1rem 1rem;
-  height: 20vh;
+  margin: 5% 1rem;
 }
 .about div {
   box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
@@ -284,8 +285,7 @@ h3 {
 }
 
 .dev-portfolio {
-  margin: 1rem 1rem;
-  position: relative;
+  margin: 5% auto;
   top: 2rem;
 }
 .dev-portfolio div {
@@ -375,9 +375,7 @@ nav .nav-link.active {
 }
 
 .skills {
-  margin: 1rem 1rem;
-  position: relative;
-  top: 3rem;
+  margin: 5% auto;
 }
 .skills div {
   box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
@@ -634,6 +632,7 @@ nav .nav-link.active {
     text-align: center;
     position: relative;
     top: -1rem;
+    margin: 1rem 1rem;
   }
   body .dev-portfolio div {
     height: 10rem;
@@ -790,6 +789,8 @@ nav .nav-link.active {
     bottom: 5vh;
     overflow: hidden;
     width: auto;
+    position: absolute;
+    margin-top: none;
   }
   .flex-redes-about .circle {
     border-radius: 3rem;

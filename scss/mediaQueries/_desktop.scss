@@ -12,7 +12,6 @@
             .column{
                 width: 100%;
             }
-        
         }
 
     }
@@ -169,6 +168,7 @@
             text-align: center;
             position: relative;
             top: -1rem;
+            margin: 1rem 1rem;
 
             div {
                 height: 10rem;
@@ -380,6 +380,8 @@
             bottom: 5vh;
             overflow: hidden;
             width: auto;
+            position: absolute;
+        margin-top: none;
         }
 
         .circle {
