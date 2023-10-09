@@ -3,6 +3,12 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         .centrado {
             height: 85vh;
@@ -133,6 +139,16 @@
                 top: -1rem;
                 display: flex;
 
+                &:hover {
+                    background: #0F2027;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    border-radius: 1rem;
+                }
+
                 img {
                     width: 100%;
                     object-fit: contain;
@@ -153,6 +169,16 @@
 
                 padding: 0.5rem;
                 font-size: small;
+
+                &:hover {
+                    background: #0F2027;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    border-radius: 1rem;
+                }
             }
         }
 
@@ -167,6 +193,16 @@
             margin: 0 auto;
             position: relative;
             top: -.5rem;
+
+            &:hover {
+                background: #0F2027;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    border-radius: 1rem;
+            }
 
             img {
                 width: 2rem !important;
@@ -184,8 +220,19 @@
             margin: 1rem 1rem;
 
 
+
             div {
                 height: 8rem;
+
+                &:hover {
+                    background: #0F2027;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    border-radius: 1rem;
+                }
 
                 img {
                     width: 8rem;
@@ -213,6 +260,16 @@
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+
+                &:hover {
+                    background: #0F2027;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    border-radius: 1rem;
+                }
 
                 img {
                     width: 2.1rem;
@@ -266,22 +323,24 @@
 
         }
     }
-    .parrafo{
-        p{
+
+    .parrafo {
+        p {
             text-align: initial;
             font-size: small;
         }
     }
-    .margin-left{
+
+    .margin-left {
         margin-left: 3.2rem;
     }
 
-.card-about{
-    width: 90vw;
-    border-radius: 1rem;
-    box-shadow: map-get($sombra, normal);
-    padding: 1rem;
-}
+    .card-about {
+        width: 90vw;
+        border-radius: 1rem;
+        box-shadow: map-get($sombra, normal);
+        padding: 1rem;
+    }
 
 
 
@@ -326,7 +385,7 @@
 
     .card {
         box-shadow: map-get($sombra, normal);
-        background-color: black;
+        background-color: transparent;
         border-radius: 1rem;
         padding: 1.5rem;
         width: 90%;
