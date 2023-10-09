@@ -344,9 +344,6 @@ h3 {
   align-self: end;
 }
 
-nav {
-  height: 15vh;
-}
 nav span {
   color: #01a1c7;
 }
@@ -508,9 +505,6 @@ nav .nav-link.active {
   }
   body .centrado .column {
     width: 100%;
-  }
-  body .centrado .container {
-    margin: auto;
   }
   h3 {
     text-align: initial;
