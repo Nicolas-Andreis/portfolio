@@ -5,7 +5,7 @@
         padding: 0;
 
         .centrado {
-            height: 100vh;
+            height: 85vh;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -45,6 +45,7 @@
     body {
         .luz {
             width: 100%;
+            justify-content: end;
         }
 
         .container-perfil {
@@ -265,8 +266,22 @@
 
         }
     }
+    .parrafo{
+        p{
+            text-align: initial;
+            font-size: small;
+        }
+    }
+    .margin-left{
+        margin-left: 3.2rem;
+    }
 
-
+.card-about{
+    width: 90vw;
+    border-radius: 1rem;
+    box-shadow: map-get($sombra, normal);
+    padding: 1rem;
+}
 
 
 

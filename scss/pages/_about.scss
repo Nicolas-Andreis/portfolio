@@ -4,7 +4,9 @@
     width: 90%;
     margin: 0 auto;
     
-
+    .margin-left{
+        margin-left: 1.5rem;
+    }
     div {
         .parrafo {
             margin-top: 2rem;
@@ -14,7 +16,7 @@
 
     .container-img-about {
         .img-about {
-            width: 20rem;
+            width: 14rem;
             transition: 0.5s;
             display: none;
             cursor: pointer;
