@@ -383,8 +383,10 @@ nav .nav-link.active {
   overflow-x: auto;
   display: flex;
   flex-direction: row;
-  scrollbar-width: none; /* Ocultar la barra de desplazamiento en navegadores que lo admitan */
-  -ms-overflow-style: none; /* Ocultar la barra de desplazamiento en Internet Explorer */
+  scrollbar-width: none;
+  /* Ocultar la barra de desplazamiento en navegadores que lo admitan */
+  -ms-overflow-style: none;
+  /* Ocultar la barra de desplazamiento en Internet Explorer */
   display: flex;
   /* Asegurarse de que las imágenes tengan suficiente espacio */
   min-width: calc(4rem * cantidad-de-imagenes + 2rem);
@@ -395,6 +397,11 @@ nav .nav-link.active {
   object-fit: cover;
   /* Eliminar margen horizontal para más espacio */
   margin: 0.3rem 0.5rem;
+  transition: transform 0.9s;
+  cursor: pointer;
+}
+.skills div img:hover {
+  transform: rotateY(360deg);
 }
 
 .containter-buttons {
@@ -495,7 +502,7 @@ nav .nav-link.active {
     padding: 0;
   }
   body .centrado {
-    height: 85vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -582,6 +589,12 @@ nav .nav-link.active {
     height: 2rem;
     position: relative;
     top: -1.5rem;
+    transition: 0.5s;
+  }
+  body .container-perfil div:nth-child(1) .containter-buttons button:hover {
+    background-color: #01a1c7;
+    color: white;
+    box-shadow: none;
   }
   body .container-perfil .perfil {
     width: 20vw;
@@ -605,7 +618,6 @@ nav .nav-link.active {
     top: -3.7rem;
   }
   body .about p {
-    height: 20vh;
     padding: 0.5rem;
     font-size: small;
   }

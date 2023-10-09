@@ -1,6 +1,6 @@
 .skills {
     margin: 5% auto;
-    
+
 
 
     div {
@@ -9,8 +9,10 @@
         overflow-x: auto;
         display: flex;
         flex-direction: row;
-        scrollbar-width: none; /* Ocultar la barra de desplazamiento en navegadores que lo admitan */
-        -ms-overflow-style: none; /* Ocultar la barra de desplazamiento en Internet Explorer */
+        scrollbar-width: none;
+        /* Ocultar la barra de desplazamiento en navegadores que lo admitan */
+        -ms-overflow-style: none;
+        /* Ocultar la barra de desplazamiento en Internet Explorer */
         display: flex;
 
         /* Asegurarse de que las imágenes tengan suficiente espacio */
@@ -22,6 +24,14 @@
             object-fit: cover;
             /* Eliminar margen horizontal para más espacio */
             margin: 0.3rem 0.5rem;
+            transition: transform 0.9s;
+            cursor: pointer;
+
+            &:hover {
+                transform: rotateY(360deg);
+            }
         }
+
+
     }
 }
