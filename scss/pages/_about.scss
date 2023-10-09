@@ -3,6 +3,7 @@
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
+    
 
     div {
         .parrafo {
@@ -29,6 +30,8 @@
 .container-skills {
     width: 90%;
     margin: 0 auto;
+    overflow-x: scroll;
+    
 
     div {
         display: flex;
@@ -36,6 +39,8 @@
         justify-content: space-around;
         overflow-x: auto;
         margin: auto .5rem;
+        width: fit-content;
+        
 
         img {
             width: 4rem;
