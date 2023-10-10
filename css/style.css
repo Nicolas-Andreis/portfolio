@@ -801,6 +801,9 @@ nav .nav-link.active {
   .flex .container-img-about .img-about {
     display: block !important;
   }
+  .container-skills {
+    overflow: hidden;
+  }
   .parrafo p {
     text-align: initial;
     font-size: small;
