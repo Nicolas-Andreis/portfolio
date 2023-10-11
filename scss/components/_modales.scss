@@ -14,10 +14,9 @@
 .modal-content {
     background-color: #000000;
     margin: auto;
-    padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: auto !important;
+    height: 99vh !important;
     max-width: 600px;
     text-align: center;
     display: flex;
@@ -25,36 +24,48 @@
 }
 
 .close {
-    color: #aaa;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.571);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
     float: right !important;
     font-size: 30px;
     cursor: pointer;
     align-self: end;
     position: relative;
+    z-index: 100;
 }
 
 
 
 /* Estilos para el título del modal */
 .modal-content h2 {
-    font-size: 24px;
+    font-size: large;
     margin-bottom: 20px;
+    position: relative;
+    top: -1.5rem;
 }
 
 /* Estilos para el contenido del modal (Lorem Ipsum) */
 .modal-content p {
-    font-size: 16px;
+    font-size: small;
     margin-bottom: 20px;
+    padding: .5rem;
+    position: relative;
+    top: -2rem;
 }
 
 /* Estilos para la imagen dentro del modal */
 .modal-content img {
-    width: 70% !important;
-    height: 100% !important;
-    margin-bottom: 20px;
+    width: 100% !important;
+    height: 65vh !important;
     object-fit: contain;
     position: relative;
-    top: -3rem;
+    top: -2rem;
 }
 
 /* Estilos para el botón "Ir al sitio" */
@@ -65,6 +76,8 @@
         box-shadow: map-get($sombra, normal);
         width: 8rem;
         border: none;
+        position: relative;
+        top: -2rem;
 }
 
 .btn-go-site:hover {
