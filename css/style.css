@@ -526,6 +526,75 @@ nav .nav-link.active {
   }
 }
 
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: auto !important;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.close {
+  color: #aaa;
+  float: right !important;
+  font-size: 30px;
+  cursor: pointer;
+  align-self: end;
+  position: relative;
+}
+
+/* Estilos para el título del modal */
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenido del modal (Lorem Ipsum) */
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la imagen dentro del modal */
+.modal-content img {
+  width: 70% !important;
+  height: 100% !important;
+  margin-bottom: 20px;
+  object-fit: contain;
+  position: relative;
+  top: -3rem;
+}
+
+/* Estilos para el botón "Ir al sitio" */
+.btn-go-site {
+  border-radius: 0.5rem;
+  background: none;
+  color: #01a1c7;
+  box-shadow: 0 2px 5px 0 #01a1c7, 0 2px 10px 0 rgb(0, 0, 0);
+  width: 8rem;
+  border: none;
+}
+
+.btn-go-site:hover {
+  background-color: #0056b3;
+}
+
 @media (min-width: 800px) {
   body {
     font-family: Arial, sans-serif;

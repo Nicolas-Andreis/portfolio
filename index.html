@@ -134,12 +134,50 @@
                     < Dev portfolio />
                 </h3>
                 <div>
-                    <a href="https://nicolas-andreis.github.io/habemus_pizza/"><img
-                            src="./imagenes/proyectos/habemmus.png" alt="habemus" title="habemmus pizza"></a>
-                    <a href="https://nicolas-andreis.github.io/Il-pirata/"><img src="./imagenes/proyectos/il pirata.png"
-                            alt="il pirata" title="il pirata"></a>
-                    <a href="https://nicolas-andreis.github.io/Dar-un-gesto/"><img
-                            src="./imagenes/proyectos/darungesto.png" alt="dar un gesto" title="dar un gesto"></a>
+                    <!-- Enlaces que abren los modales -->
+                    <a href="#" class="open-modal" data-modal-id="modal-habemus">
+                        <img src="./imagenes/proyectos/habemmus.png" alt="habemus" title="habemus pizza">
+                    </a>
+                    <a href="#" class="open-modal" data-modal-id="modal-ilpirata">
+                        <img src="./imagenes/proyectos/il pirata.png" alt="il pirata" title="il pirata">
+                    </a>
+                    <a href="#" class="open-modal" data-modal-id="modal-darungesto">
+                        <img src="./imagenes/proyectos/darungesto.png" alt="dar un gesto" title="dar un gesto">
+                    </a>
+                </div>
+
+                <!-- Modales (agregados con style="display: none;") -->
+                <div id="modal-habemus" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-habemus')">&times;</span>
+                        <img src="./imagenes/proyectos/habemmus.png" alt="">
+                        <h2>Habemmus pizza</h2>
+                        <p>"Habemus Pizza en Carhué" es un proyecto creado por vecinos que ofrecen una deliciosa selección
+                            de pizzas. Destacándose por su compromiso con la calidad y el sabor, este emprendimiento se
+                            especializa en envíos a domicilio y retiros en el local.</p>
+                        <a href="https://nicolas-andreis.github.io/habemus_pizza/" class="btn-go-site">Ir al sitio</a>
+                    </div>
+                </div>
+                <div id="modal-ilpirata" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-ilpirata')">&times;</span>
+                        <img src="./imagenes/proyectos/il pirata.png" alt="">
+                        <h2>Il pirata</h2>
+                        <p>Proyecto de comercio electrónico enfocado en el pedido de comida en línea. Este
+                            sistema ofrece tanto envío a domicilio como la posibilidad de retirar la comida en el local,
+                            brindando flexibilidad a los clientes. Experiencia de usuario
+                            atractiva y receptiva en múltiples dispositivos.</p>
+                        <a href="https://nicolas-andreis.github.io/Il-pirata/" class="btn-go-site">Ir al sitio</a>
+                    </div>
+                </div>
+                <div id="modal-darungesto" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-darungesto')">&times;</span>
+                        <img src="./imagenes/proyectos/darungesto.png" alt="">
+                        <h2>Dar un gesto</h2>
+                        <p>"Dar un Gesto" es una aplicación solidaria que conecta a personas con el deseo de ayudar a los menos afortunados. Navega a través de diversas causas y dona de manera segura. Únete a una comunidad comprometida con un solo gesto: hacer del mundo un lugar mejor. ¡Haz la diferencia hoy! #DarUnGesto 🤝💙</p>
+                        <a href="https://nicolas-andreis.github.io/Dar-un-gesto/" class="btn-go-site">Ir al sitio</a>
+                    </div>
                 </div>
             </section>
             <section class="skills">

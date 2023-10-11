@@ -34,3 +34,38 @@ celesteElement.addEventListener('click', function () {
     onElement.classList.toggle('active');
     offElement.classList.toggle('active');
 });
+
+
+//controlar modales
+// Función para abrir un modal
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+}
+
+// Función para cerrar un modal
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'none';
+}
+
+// Obtén referencias a los elementos del DOM
+const openModalBtns = document.querySelectorAll('.open-modal');
+const modals = document.querySelectorAll('.modal');
+
+// Asigna un event listener a cada botón que abre un modal
+openModalBtns.forEach((openModalBtn) => {
+    openModalBtn.addEventListener('click', () => {
+        const modalId = openModalBtn.getAttribute('data-modal-id');
+        openModal(modalId);
+    });
+});
+
+// Cierra el modal cuando se hace clic en cualquier área fuera del contenido del modal
+window.addEventListener('click', (event) => {
+    modals.forEach((modal) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
