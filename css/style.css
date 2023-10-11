@@ -649,7 +649,7 @@ nav .nav-link.active {
     width: 20vw;
     position: relative;
     right: -0.5rem;
-    height: 40vh;
+    height: 33vh;
     top: -1rem;
     display: flex;
   }
@@ -663,7 +663,7 @@ nav .nav-link.active {
     border-radius: 1rem;
   }
   body .container-perfil .perfil img {
-    width: 100%;
+    width: 90%;
     object-fit: contain;
   }
   body .about {
@@ -679,6 +679,9 @@ nav .nav-link.active {
     height: 20vh;
     padding: 0.5rem;
     font-size: small;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
   body .about p:hover {
     background: #0F2027;
@@ -724,7 +727,7 @@ nav .nav-link.active {
     margin: 1rem 1rem;
   }
   body .dev-portfolio div {
-    height: 8rem;
+    height: 32vh;
   }
   body .dev-portfolio div:hover {
     background: #0F2027;
@@ -736,8 +739,8 @@ nav .nav-link.active {
     border-radius: 1rem;
   }
   body .dev-portfolio div img {
-    width: 8rem;
-    height: 6rem;
+    width: 18vw;
+    height: 30vh;
     object-fit: cover;
     border-radius: 0.5rem;
   }
@@ -752,7 +755,7 @@ nav .nav-link.active {
   }
   body .skills div {
     overflow-x: inherit;
-    height: 8rem;
+    height: 32vh;
     width: 20vw;
     display: flex;
     justify-content: center;
@@ -768,8 +771,8 @@ nav .nav-link.active {
     border-radius: 1rem;
   }
   body .skills div img {
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 3rem;
+    height: 3rem;
   }
   body .redes {
     display: flex;
