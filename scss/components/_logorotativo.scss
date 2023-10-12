@@ -1,0 +1,13 @@
+.rotating-image {
+    animation: rotate 4s linear infinite; /* Animación llamada "rotate" con una duración de 3 segundos y repetición infinita */
+    transform-origin: center; /* Define el centro de rotación en el centro de la imagen */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg); /* Ángulo de inicio: 0 grados sobre el eje Y */
+    }
+    100% {
+        transform: rotateY(360deg); /* Ángulo final: 360 grados sobre el eje Y (una rotación completa) */
+    }
+}

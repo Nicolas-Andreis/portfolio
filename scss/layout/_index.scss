@@ -41,6 +41,7 @@ h3 {
 
     header {
         nav {
+            
             .luz {
                 img {
                     background-color: black;
@@ -59,10 +60,18 @@ h3 {
     }
 
     main {
+        .modal-content{
+            background-color: white;
+        }
         .container-perfil {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: end;
+
             .perfil {
                 img {
-                    width: 100%;
+                    width: 90%;
                     object-fit: contain;
                 }
             }
@@ -101,3 +110,5 @@ h3 {
         }
     }
 }
+
+

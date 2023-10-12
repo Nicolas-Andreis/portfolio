@@ -1,9 +1,11 @@
 //efecto pagina contact para que giren los circulos
 document.addEventListener('DOMContentLoaded', function() {
-    const flexRedesAbout = document.querySelector('.flex-redes-about');
-
-    // Agrega una clase que activa la rotación y la transición
-    flexRedesAbout.classList.add('rotated');
+    // Espera 0.5 segundos (500 milisegundos) antes de agregar la clase
+    setTimeout(function() {
+        const flexRedesAbout = document.querySelector('.flex-redes-about');
+        // Agrega una clase que activa la rotación y la transición
+        flexRedesAbout.classList.add('rotated');
+    }, 500);
 });
 //efecto pagina contact para que giren los circulos
 
