@@ -226,10 +226,11 @@
                     object-fit: cover;
                     border-radius: 0.5rem;
                     transition: .9s;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.5);
                         z-index: 1000;
-                        
+
                     }
                 }
             }
@@ -376,11 +377,58 @@
         border-radius: 1rem;
         padding: 1.5rem;
         width: 90%;
-        height: auto;
+        height: 60vh;
         margin: auto;
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
+
+        .column {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            .flex-card {
+                margin-top: 10vh;
+            }
+
+            div {
+                .project {
+                    position: relative;
+                    top: -11vh;
+                    height: 30vh;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    width: 30vw;
+                    right: -5vw;
+                }
+            }
+
+            .container-versitio {
+                width: 40vw;
+                margin-top: 1rem;
+                position: relative;
+                top: -18vh;
+                left: -1vw;
+            }
+
+            .container-tecnologias {
+                position: relative;
+                left: -50vw;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+            }
+
+            .container-tecnologias {
+                display: flex;
+                flex-direction: column;
+            }
+        }
 
         .flex {
             display: flex;
@@ -408,26 +456,6 @@
                         text-align: center;
                     }
                 }
-            }
-        }
-
-        .flex-card {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-
-            p {
-                text-align: center;
-                padding: 1rem;
-            }
-
-            img {
-                width: 30rem;
-                height: 10rem;
-                border-radius: 1rem;
-                object-fit: contain;
             }
         }
     }

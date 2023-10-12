@@ -274,36 +274,49 @@ h3 {
   margin-bottom: 2rem;
   color: white;
 }
-.card .flex {
+.card .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
-.card .flex .container-tecnologias {
+.card .column .container-tecnologias div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.card .flex div {
+.card .column .container-versitio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 1rem;
 }
-.card .flex div a {
+.card .column .container-versitio div {
+  margin-top: 1rem;
+}
+.card .column .container-versitio div a {
   text-decoration: none;
   color: white;
-  margin-top: 1rem;
 }
-.card .flex div a p {
+.card .column .container-versitio div a p {
   border: 1px solid white;
   border-radius: 0.5rem;
   width: 7rem;
   display: flex;
   justify-content: center;
 }
+.card .column div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card .column div .project {
+  width: 100%;
+}
 .card .flex-card {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
@@ -312,7 +325,7 @@ h3 {
   text-align: center;
 }
 .card .flex-card img {
-  width: 20rem;
+  width: 100%;
   height: 15rem;
   border-radius: 1rem;
   object-fit: contain;
@@ -920,11 +933,49 @@ nav .nav-link.active {
     border-radius: 1rem;
     padding: 1.5rem;
     width: 90%;
-    height: auto;
+    height: 60vh;
     margin: auto;
     color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .card .column {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .card .column .flex-card {
+    margin-top: 10vh;
+  }
+  .card .column div .project {
+    position: relative;
+    top: -11vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    width: 30vw;
+    right: -5vw;
+  }
+  .card .column .container-versitio {
+    width: 40vw;
+    margin-top: 1rem;
+    position: relative;
+    top: -18vh;
+    left: -1vw;
+  }
+  .card .column .container-tecnologias {
+    position: relative;
+    left: -50vw;
+  }
+  .card .column div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .card .column .container-tecnologias {
+    display: flex;
+    flex-direction: column;
   }
   .card .flex {
     display: flex;
@@ -948,23 +999,6 @@ nav .nav-link.active {
     display: flex;
     justify-content: center;
     text-align: center;
-  }
-  .card .flex-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  .card .flex-card p {
-    text-align: center;
-    padding: 1rem;
-  }
-  .card .flex-card img {
-    width: 30rem;
-    height: 10rem;
-    border-radius: 1rem;
-    object-fit: contain;
   }
   /* contact page ////////////////////////////////////*/
   .container-form {
