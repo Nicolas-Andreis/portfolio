@@ -60,13 +60,21 @@
 }
 
 /* Estilos para la imagen dentro del modal */
-.modal-content img {
-    width: 100% !important;
-    height: 65vh !important;
-    object-fit: contain;
-    position: relative;
-    top: -2rem;
-}
+.modal-content{
+    img {
+        width: 100% !important;
+        height: 65vh !important;
+        object-fit: contain;
+        position: relative;
+        top: -2rem;
+        &:hover{
+            transform: none;
+                            z-index: 1000;
+    
+        }
+    }
+} 
+
 
 /* Estilos para el botón "Ir al sitio" */
 .btn-go-site {

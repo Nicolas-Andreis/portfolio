@@ -618,6 +618,10 @@ nav .nav-link.active {
   position: relative;
   top: -2rem;
 }
+.modal-content img:hover {
+  transform: none;
+  z-index: 1000;
+}
 
 /* Estilos para el botón "Ir al sitio" */
 .btn-go-site {
@@ -835,7 +839,7 @@ nav .nav-link.active {
     transition: 0.9s;
   }
   body .dev-portfolio div img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     z-index: 1000;
   }
   body .skills {
