@@ -19,8 +19,8 @@
         min-width: calc(4rem * (cantidad-de-imagenes) + 2rem);
 
         img {
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             object-fit: cover;
             /* Eliminar margen horizontal para más espacio */
             margin: 0.3rem 0.5rem;

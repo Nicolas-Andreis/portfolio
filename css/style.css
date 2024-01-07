@@ -450,8 +450,8 @@ nav .nav-link.active {
   min-width: calc(4rem * cantidad-de-imagenes + 2rem);
 }
 .skills div img {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   object-fit: cover;
   /* Eliminar margen horizontal para más espacio */
   margin: 0.3rem 0.5rem;
@@ -860,8 +860,8 @@ nav .nav-link.active {
     flex-wrap: wrap;
   }
   body .skills div img {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   body .redes {
     display: flex;
